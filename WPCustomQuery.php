@@ -11,6 +11,9 @@ function build_custom_query($criteria) {
 	//Instantiate the arguments array for WP_Query
 		$args = array( 'post_type' => 'listing',
 		               'posts_per_page' => -1,
+		               	'orderby' => 'featured',
+						'meta_key' => 'featured',
+						'order' => 'DESC'
 			);
 
 
